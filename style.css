@@ -5,12 +5,11 @@
 }
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 150px;
 }
 
 .hero{
-    margin-top: 25px;
     display: flex;
     justify-content: space-evenly;
     background-color: #1F2039;
@@ -21,7 +20,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-top: 50px;
+    padding: 15px 15px;
 }
 .colonne-gauche h1{
     font-size: 55px;
@@ -34,7 +33,6 @@ header{
     color: #A5B4FC;
     font-family: 'Roboto';
     font-weight: 400;
-    margin-bottom: 50px;
 }
 .colonne-gauche p{
     color: #F9F8FF;
@@ -46,7 +44,9 @@ header{
     width: 30%;
 }
 .selfie{
-    width: 100%;
+    width: 420px;
+    height: 450px;
+    object-fit: cover;
 }
 footer{
     display: flex;
@@ -62,30 +62,31 @@ footer{
 
 }
 .logo{
-    width: 40%;
+    width: 150px;
+    height: 150px;
     margin-left: 25px;
 }
 nav{
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
     font-family: 'Montaga';
     font-weight: 800;
     
 }
-.nav-liste{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+nav ul{
+    display: flex;    
+    justify-content: space-evenly;
     list-style-type: none;
+    width: 100%;
 }
 .nav-item{
+    min-width: 30%;
     color: black;
     font-size: 25px;
+    text-align: center;
 }
 .nav-link{
-    
     text-decoration: none;
 }
 .liste-reseaux{
@@ -97,4 +98,53 @@ nav{
 
 .icone-reseaux{
     width: 40%;
+}
+.container-projets{
+    width: 70%;
+    margin: auto;
+    border: 1px solid red;
+}
+.liste-projet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.projets h3{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    font-family: 'Montaga';
+}
+.projets{
+    background-color: #C5D5DE;
+
+}
+.btn-contact{
+    width: 315px;
+    height: 65px;
+    margin: auto;
+    background: linear-gradient(#8E86B5 , #ACAEED);
+    padding: 21px 38px 21px 38px;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Montaga';
+    font-size: 17px;
+    line-height: 21px;
+    transition: all 0.2s ease-in;
+}
+.btn-contact i{
+    opacity: 0;
+}
+.btn-contact:hover{
+    font-size: 19px;
+}
+.btn-contact a{
+    color: #ffff;
+    text-decoration: none;
+    transition: all 0.2ms ease-out;
+}
+.btn-contact a:hover{
+    color: darkred;
+
 }
